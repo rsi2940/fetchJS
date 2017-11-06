@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(to right, rgb(42, 82, 152), #1e3c72);
+  color: white;
+  text-align: center;
+}
+
+.endpoints {
+  display: grid;
+  grid-template-columns: 1fr repeat(6, max-content) 1fr;
+  grid-column-gap: 2em;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.endpoints span {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: purple;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.endpoints :nth-child(1) {
+  grid-column: 2;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
